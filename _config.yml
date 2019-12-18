@@ -1,0 +1,29 @@
+root: /
+
+Home: /
+Archives: /archives
+About: /about
+
+language: en
+
+author: iGuan7u
+bio: Be yourself
+description: A beautiful & simple theme.
+
+disqus:
+  enable: false
+  shortname: iguan7u
+
+google_site_verification:
+google_analytics:
+
+mta_analytics:
+  enable: enable
+  name: MTAH5
+  sid: 500681628
+
+node_sass:
+  # outputStyle: nested
+  outputStyle: compressed
+  precision: 5
+  sourceComments: false

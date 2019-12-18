@@ -1,0 +1,27 @@
+.al_page_content_outline {
+    line-height: 20px;
+    font-size: .7em;
+    word-wrap: break-word;
+    padding: 8px 8px 16px 14px;
+    margin: 0 0 25px 0;
+    display: block;
+    color: #808080;
+    background: #fff;
+    border: none;
+    box-shadow: inset 0 0 0 1px #E4EBF2;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .toc, .toc-child {
+        padding: 0;
+    }
+
+    li {
+        list-style-position: outside;
+        margin-left: 1.5em;
+    }
+
+    .toc-link {
+        color: #888;
+    }
+}

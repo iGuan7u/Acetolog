@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.al_fake_background {
+    background-color: $background_color;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    bottom: 0;
+}
+
+.al_main_container {
+    position: relative;
+    margin: 0 35px;
+    padding: 100px 50px;
+    background-color: white;
+    box-shadow: rgba(1, 1, 1, 0.1) 0px 10px 20px;
+    color: #444;
+}
+
+@media screen and (max-width: 768px) {
+    .al_main_container {
+        margin: 0;
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .al_main_container {
+        padding: 100px 50px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

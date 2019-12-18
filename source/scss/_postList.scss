@@ -1,0 +1,124 @@
+.al_index_container {
+    margin-top: 100vh;
+    position: relative;
+    z-index: 100;
+    min-height: 100vh;
+}
+
+.al_section_container {
+    height: 55px;
+    padding-bottom: 40px;
+    font-size: 15px;
+    .section_header {
+        color: #6e6e6e;
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+
+.al_index_pageList_wrapper {
+    background-color: white;
+    margin: 0 35px;
+    box-shadow: rgba(1, 1, 1, 0.1) 0px 10px 20px;
+    padding: 100px;
+}
+
+.al_index_page_seperator {
+    &::after {
+        content: "";
+        height: 1px;
+        width: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -25px;
+        background: rgba(51, 51, 51, 0.2);
+    }
+}
+
+.al_index_pageList_item {
+    position: relative;
+    list-style-type: none;
+    padding: 80px 20px;
+}
+
+.al_index_post_title_cnt {
+    flex-direction: column;
+}
+
+.al_index_post_title_letter {
+    left: -34px;
+    line-height: 190px;
+    top: 30px;
+}
+
+.al_index_post_title {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 0;
+    padding: 10px 0;
+
+    a {
+        display: block;
+        color: #333;
+    }
+
+    a:hover {
+        color: $theme_color;
+    }
+}
+
+.al_index_post_button {
+    width: calc(50% - 15px);
+    max-width: 160px;
+    min-width: 110px;
+    margin-right: 15px;
+}
+
+.al_index_post_extra {
+    margin: 8px 0 26px 0;
+    color: #888;
+    font-size: 13px;
+}
+
+.al_index_post_extra_item {
+    margin-right: 15px;
+    &::after {
+        content: "/";
+        right: -7px;
+        position: relative;
+    }
+}
+
+.al_index_post_excerpt_cnt {
+    margin-bottom: 30px;
+}
+
+.al_index_post_excerpt {
+    color: #444;
+}
+
+.al_index_footer {
+    color: #aaa;
+    font-size: 14px;
+    height: 235px;
+    flex-direction: column;
+    position: relative;
+    background-color: #f8f8f8;
+    z-index: 11;
+}
+
+.al_index_footer_item {
+    margin-bottom: 10px;
+}
+
+.al_index_footer_title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .al_index_post_title_letter {
+        display: none;
+    }
+}

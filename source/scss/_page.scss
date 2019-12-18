@@ -1,0 +1,136 @@
+.al_page_background {
+    background-color: $theme_color;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.al_page_container {
+    z-index: 20;
+    position: relative;
+    min-height: 100vh;
+    margin-top: 90px;
+}
+
+.al_main_page_container {
+    font-size: 14px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    a {
+        color: $theme_color;
+
+        img {
+            border: none;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    ul, ol:not(.toc):not(.toc-child) {
+        padding-inline-start: 0px;
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        p {
+            display: inline;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            &::before {
+                content: "•";
+                color: $theme_color;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            text-indent: -0.7em;
+        }
+    }
+
+    ol { 
+        counter-reset: ol 0;
+        li {
+            display: block;
+            text-indent: -1.45em;
+
+            &::before {
+                content: counter(ol) ".";
+                counter-increment: ol;
+                color: $theme_color;
+                text-align: right;
+                display: inline-block;
+                min-width: 1em;
+                margin-right: 0.5em;
+            }
+        }
+    }
+
+    q, blockquote {
+        quotes: none;
+
+        &::before, &::after {
+            content: "";
+            content: none
+        }
+    }
+
+    p {
+        margin-bottom: 1.57143em;
+        hyphens: auto;
+        line-height: 25px;
+    }
+
+    hr {
+        height: 1px;
+        border: 0;
+        background-color: #dedede;
+        margin: -1px auto 1.57143em auto
+    }
+
+    code:not(.hljs) {
+        font-family: "Menlo-Regular";
+        // display: inline;
+        border: solid 1px #dedede;
+        padding: 0.2em 0.5em;
+        font-size: 0.9em
+    }
+}
+
+.al_page_title {
+    margin: 0;
+}
+
+.al_page_info {
+    color: #888;
+    margin: 20px 0;
+}
+
+.al_page_content_info {
+    margin-right: 15px;
+    &::after {
+        content: "/";
+        right: -7px;
+        position: relative;
+    }
+    font-size: 13px;
+    color: #888;
+}
+
+.post-nav {
+    justify-content: space-between;
+    margin-top: 50px;
+}

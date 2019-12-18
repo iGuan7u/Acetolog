@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 20;
+}
+
+.al_header_container {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.al_header_container a {
+    color: white;
+    padding: 0 15px;
+}

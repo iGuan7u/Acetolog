@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Josefin Sans;
+    src: url("/assets/JosefinSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: "AvenirNext-Medium";
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4, span, div {
+    font-family: "AvenirNext-Regular";
+}
+
+b, strong {
+    font-family: "AvenirNext-Bold"
+}
+
+i, em {
+    font-family: "AvenirNext-Italic"
+}

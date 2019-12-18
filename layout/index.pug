@@ -1,0 +1,46 @@
+extends includes/base
+
+block content
+    div.al_index_background.dis_flex_center
+        - var bio = theme.bio || 'A Beautiful Text Site.'
+        - var firstBioChar = bio.substr(0, 1)
+        div.al_letter.al_index_background_letter= firstBioChar
+        h2.al_index_background_bio= bio
+    div.al_index_container
+        div.al_fake_background
+        div.al_main_container
+            div.al_section_container.dis_flex_jcenter
+                div.section_header= 'LATEST PAGES'
+            ur.al_post_list
+                each item in site.posts.sort('date', -1).toArray()
+                    - var postTitle = item.title || 'No Title'
+                    - var createDate = date(item.date, 'MMM DD')
+                    - var firstChar = postTitle.substr(0, 1)
+                    - var postURL = item.link || item.path
+                    - var excerpt = item.excerpt || 'No Excerpt'
+                    li.al_index_pageList_item.al_index_page_seperator
+                        div.al_index_post_title_cnt.dis_flex
+                            div.al_letter.al_index_post_title_letter= firstChar
+                            h2.al_index_post_title
+                                a(href=url_for(postURL))= postTitle
+                            div.al_index_post_extra.dis_flex
+                                div.al_index_post_date.al_index_post_extra_item= createDate
+                                div.al_index_post_read_time
+                                    |#{min2read(item.content)} Min Read
+                        div.al_index_post_excerpt_cnt
+                            p.al_index_post_excerpt= excerpt
+                        div.al_index_post_button_cnt.dis_flex
+                            a.al_button.al_button_red.al_index_post_button(href=url_for(postURL))= 'READ ON'
+                            a.al_button.al_button_white.al_index_post_button= 'READ LATER'
+
+            nav.dis_flex.post-nav
+                span.prev
+                    if page.prev
+                        a(href=url_for(page.prev_link))
+                            span.arrow ←
+                            | Newer Posts
+                span.next
+                    if page.next
+                        a(href=url_for(page.next_link))
+                            | Older Posts
+                            span.arrow →

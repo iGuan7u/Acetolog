@@ -1,0 +1,75 @@
+
+
+// ol,ul {
+// 	list-style: none
+// }
+
+.al_article {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+caption,th,td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+	display: block
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.text-overflow-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+u {
+	text-decoration: none;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%,#e06e73 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0 1.05em
+}
+
+s {
+	color: #878787
+}
+
+p {
+	margin-bottom: 0.1em
+}
+
+hr {
+	margin-bottom: 0.7em;
+	margin-top: 0.7em
+}
+
+blockquote {
+	display: block;
+	margin-left: -1em;
+	padding-left: 0.8em;
+	border-left: 0.2em solid #e06e73
+}
+
+.arrow svg #rod {
+	stroke: #545454
+}
+
+.arrow svg #point {
+	fill: #545454
+}
+
+mark {
+	color: inherit;
+	display: inline;
+	padding: 0.2em 0.5em;
+	background-color: #fcffc0
+}

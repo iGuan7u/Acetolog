@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dis_flex {
+    display: flex;   
+}
+
+.dis_flex_jcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.dis_flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.al_button {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    &:hover {
+        box-shadow: rgba(1, 1, 1, 0.1) 0px 10px 20px;
+    }
+}
+
+.al_button_red {
+    color: white;
+    background: $theme_color;
+    border: 1px solid $theme_color;
+}
+
+.al_button_white {
+    background: white;
+    color: $theme_color;
+    border: 1px solid $theme_color;
+}
+
+.al_letter {
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.1);
+    font-size: 190px;
+    font-weight: 600;
+    position: absolute;
+    display: block;
+}
