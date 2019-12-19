@@ -95,7 +95,8 @@
 }
 
 .al_index_post_excerpt {
-    color: #444;
+    color: #555;
+    line-height: 30px;
 }
 
 .al_index_footer {
@@ -106,6 +107,10 @@
     position: relative;
     background-color: #f8f8f8;
     z-index: 11;
+
+    a {
+        color: $theme_color;
+    }
 }
 
 .al_index_footer_item {
