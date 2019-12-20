@@ -18,6 +18,7 @@ block content
                     - var firstChar = postTitle.substr(0, 1)
                     - var postURL = item.link || item.path
                     - var excerpt = item.excerpt || 'No Excerpt'
+                    - var readLaterURL = 'https://getpocket.com/edit?url=' + encodeURIComponent(config.url + '/' + url_for(postURL))
                     li.al_index_pageList_item.al_index_page_seperator
                         div.al_index_post_title_cnt.dis_flex
                             div.al_letter.al_index_post_title_letter= firstChar
@@ -31,7 +32,7 @@ block content
                             p.al_index_post_excerpt= excerpt
                         div.al_index_post_button_cnt.dis_flex
                             a.al_button.al_button_red.al_index_post_button(href=url_for(postURL))= 'READ ON'
-                            a.al_button.al_button_white.al_index_post_button= 'READ LATER'
+                            a.al_button.al_button_white.al_index_post_button(href=readLaterURL)= 'READ LATER'
 
             nav.dis_flex.post-nav
                 span.prev
