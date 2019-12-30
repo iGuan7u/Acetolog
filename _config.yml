@@ -18,8 +18,8 @@ google_site_verification:
 google_analytics:
 
 ICPLicense:
-  enable: true
-  content: 粤ICP备16128736号-2
+  enable: false
+  content: "Fill IPCLicense"
 
 mta_analytics:
   enable: enable
