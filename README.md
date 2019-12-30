@@ -1,6 +1,6 @@
 # Acetolog
 
-A beautiful & simple hexo theme.
+A beautiful & simple hexo theme. Inspired by typology.
 
 ![ScreenShot](./screenshot/1.png)
 
@@ -11,7 +11,6 @@ Acetolog denpende on some extra hexo plugins, in order to have best experience, 
 
 - hexo-renderer-pug
 - hexo-renderer-sass
-- hexo-renderer-stylus
 - hexo-wordcount
 
 ## Install
@@ -33,3 +32,4 @@ $: git clone https://github.com/iGuan7u/Acetolog
 $: hexo clean
 $: hexo g
 ```
+## Analyze

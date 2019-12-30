@@ -20,19 +20,18 @@
     img {
         max-width: 100%;
         height: auto;
+        border: none;
     }
 
     a {
         color: $theme_color;
-
-        img {
-            border: none;
-        }
     }
 
     table {
         border-collapse: collapse;
-        border-spacing: 0
+        border-spacing: 0;
+        width: 100%;
+        table-layout: fixed;
     }
 
     ul, ol:not(.toc):not(.toc-child) {
@@ -88,10 +87,19 @@
         }
     }
 
-    p {
+    p, figure {
         margin-bottom: 1.57143em;
         hyphens: auto;
         line-height: 25px;
+    }
+
+    figure {
+        margin-left: 0;
+        margin-right: 0;
+        span {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
     }
 
     hr {
@@ -101,7 +109,7 @@
         margin: -1px auto 1.57143em auto
     }
 
-    code:not(.hljs) {
+    code.plain, figure.plain {
         font-family: "Menlo-Regular";
         // display: inline;
         border: solid 1px #dedede;

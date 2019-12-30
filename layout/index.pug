@@ -4,10 +4,10 @@ block content
     div.al_index_background.dis_flex_center
         - var bio = theme.bio || 'A Beautiful Text Site.'
         - var firstBioChar = bio.substr(0, 1)
-        div.al_letter.al_index_background_letter= firstBioChar
+        div.al_pos_ab.al_letter.al_index_background_letter= firstBioChar
         h2.al_index_background_bio= bio
     div.al_index_container
-        div.al_fake_background
+        div.al_pos_ab.al_fake_background
         div.al_main_container
             div.al_section_container.dis_flex_jcenter
                 div.section_header= 'LATEST PAGES'
@@ -17,11 +17,11 @@ block content
                     - var createDate = date(item.date, 'MMM DD')
                     - var firstChar = postTitle.substr(0, 1)
                     - var postURL = item.link || item.path
-                    - var excerpt = item.excerpt || 'No Excerpt'
+                    - var excerpt = item.excerpt + '...' || 'No Excerpt'
                     - var readLaterURL = 'https://getpocket.com/edit?url=' + encodeURIComponent(config.url + '/' + url_for(postURL))
                     li.al_index_pageList_item.al_index_page_seperator
                         div.al_index_post_title_cnt.dis_flex
-                            div.al_letter.al_index_post_title_letter= firstChar
+                            div.al_pos_ab.al_letter.al_index_post_title_letter= firstChar
                             h2.al_index_post_title
                                 a(href=url_for(postURL))= postTitle
                             div.al_index_post_extra.dis_flex

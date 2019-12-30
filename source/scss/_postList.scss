@@ -7,7 +7,6 @@
 
 .al_section_container {
     height: 55px;
-    padding-bottom: 40px;
     font-size: 15px;
     .section_header {
         color: #6e6e6e;
@@ -120,10 +119,15 @@
 .al_index_footer_title {
     font-size: 26px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
     .al_index_post_title_letter {
         display: none;
+    }
+
+    .al_section_container {
+        height: 25px;
     }
 }

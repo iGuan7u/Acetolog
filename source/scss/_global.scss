@@ -21,6 +21,10 @@ a {
     align-items: center;
 }
 
+.al_pos_ab {
+    position: absolute;
+}
+
 .al_button {
     display: block;
     text-align: center;
@@ -50,6 +54,5 @@ a {
     color: rgba(0,0,0,0.1);
     font-size: 190px;
     font-weight: 600;
-    position: absolute;
     display: block;
 }
