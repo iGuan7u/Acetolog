@@ -30,6 +30,10 @@ baidu_analytics:
   enable: false
   id: baidu_analytice_id
 
+google_analytice:
+  enable: false
+  tracking_id: google_tracking_id
+
 node_sass:
   # outputStyle: nested
   outputStyle: compressed

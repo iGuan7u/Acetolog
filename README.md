@@ -42,7 +42,9 @@ $: hexo g
 ## Analyze
 
 Acetolog support: 
+
+- [GoogleAnalytice](https://analytics.google.com)
 - [TencentAnalytice](https://mta.qq.com)
 - [BaiduAnalytice](https://tongji.baidu.com)
 
-You can modify the theme config `./theme/Acetolog/_config.yml` to enable which you prefer.
+You can modify the theme config `./theme/Acetolog/_config.yml` to enable which one you prefer.
