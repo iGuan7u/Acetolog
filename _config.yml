@@ -22,9 +22,13 @@ ICPLicense:
   content: "Fill IPCLicense"
 
 mta_analytics:
-  enable: enable
-  name: MTAH5
-  sid: 500681628
+  enable: false
+  name: mta_analytics_name
+  sid: mta_analytics_sid
+
+baidu_analytics:
+  enable: false
+  id: baidu_analytice_id
 
 node_sass:
   # outputStyle: nested

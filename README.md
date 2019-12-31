@@ -41,4 +41,8 @@ $: hexo g
 
 ## Analyze
 
-AcetoLog support [TencentAnalyze](https://mta.qq.com), you can modify the theme config `./theme/Acetolog/_config.yml` to enable it.
+Acetolog support: 
+- [TencentAnalytice](https://mta.qq.com)
+- [BaiduAnalytice](https://tongji.baidu.com)
+
+You can modify the theme config `./theme/Acetolog/_config.yml` to enable which you prefer.
