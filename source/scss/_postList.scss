@@ -1,5 +1,5 @@
 .al_index_container {
-    margin-top: 100vh;
+    margin-top: calc(100vh - 120px);
     position: relative;
     z-index: 100;
     min-height: 100vh;
@@ -125,6 +125,10 @@
 @media screen and (max-width: 768px) {
     .al_index_post_title_letter {
         display: none;
+    }
+
+    .al_index_container {
+        margin-top: 100vh;
     }
 
     .al_section_container {

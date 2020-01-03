@@ -9,17 +9,22 @@
 
 .al_main_container {
     position: relative;
-    margin: 0 35px;
     padding: 100px 50px;
     background-color: white;
     box-shadow: rgba(1, 1, 1, 0.1) 0px 10px 20px;
     color: #444;
+    padding: 100px 30px;
 }
 
 @media screen and (max-width: 768px) {
     .al_main_container {
         margin: 0;
-        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .al_main_container {
+        margin: 0 35px;
     }
 }
 
