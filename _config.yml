@@ -14,9 +14,6 @@ disqus:
   enable: false
   shortname: iguan7u
 
-google_site_verification:
-google_analytics:
-
 ICPLicense:
   enable: false
   content: "Fill IPCLicense"
