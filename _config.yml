@@ -18,13 +18,13 @@ google_site_verification:
 google_analytics:
 
 ICPLicense:
-  enable: false
-  content: "Fill IPCLicense"
+  enable: true
+  content: 粤ICP备16128736号-2
 
 mta_analytics:
-  enable: false
-  name: mta_analytics_name
-  sid: mta_analytics_sid
+  enable: true
+  name: MTAH5
+  sid: 500681628
 
 baidu_analytics:
   enable: false
