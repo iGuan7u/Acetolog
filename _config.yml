@@ -11,8 +11,8 @@ bio: Be yourself
 description: A beautiful & simple theme.
 
 disqus:
-  enable: false
-  shortname: your_disqus_short_name
+  enable: true
+  shortname: iguan7u
 
 ICPLicense:
   enable: true
