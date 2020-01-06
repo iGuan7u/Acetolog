@@ -12,7 +12,7 @@ description: A beautiful & simple theme.
 
 disqus:
   enable: false
-  shortname: iguan7u
+  shortname: your_disqus_short_name
 
 ICPLicense:
   enable: true

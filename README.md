@@ -39,7 +39,13 @@ $: hexo clean
 $: hexo g
 ```
 
-## Analyze
+## Custom
+
+### Comment
+
+Acetolog support disqus, you can enable `disqus` config in theme config `theme/Acetolog/_config.yml`.
+
+### Analytice
 
 Acetolog support: 
 
@@ -47,4 +53,15 @@ Acetolog support:
 - [TencentAnalytice](https://mta.qq.com)
 - [BaiduAnalytice](https://tongji.baidu.com)
 
-You can modify the theme config `./theme/Acetolog/_config.yml` to enable which one you prefer.
+You can modify the theme config `theme/Acetolog/_config.yml` to enable which one you prefer.
+
+### Main Theme Color
+
+You can modify the main color to your prefer one, which in `$theme_color` in `theme/Acetolog/source/scss/_var.scss`.
+
+### IPC License
+
+You can enable it in theme config `theme/Acetolog/_config.yml`, chinese website may need it.
+
+## License
+MIT
