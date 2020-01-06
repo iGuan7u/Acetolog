@@ -41,6 +41,10 @@ $: hexo g
 
 ## Custom
 
+### Comment
+
+Acetolog support disqus, you can enable `disqus` config in theme config `theme/Acetolog/_config.yml`.
+
 ### Analytice
 
 Acetolog support: 

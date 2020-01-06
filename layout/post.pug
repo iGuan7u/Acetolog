@@ -22,6 +22,8 @@ block content
 
                 section#post-body!=page.content
 
+                include ./includes/disqus.pug
+
             - var prev = page.prev ? page.prev.path : false;
             - var next = page.next ? page.next.path : false;
             nav.dis_flex.post-nav
@@ -41,7 +43,3 @@ block content
         script!= "document.querySelectorAll('figure.highlight').forEach(function(b){hljs.highlightBlock(b);});"
 
             //- include includes/comment.pug
-
-
-
-
