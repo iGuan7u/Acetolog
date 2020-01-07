@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 .al_index_background {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
     z-index: 10;
 
     background-color: $theme_color;

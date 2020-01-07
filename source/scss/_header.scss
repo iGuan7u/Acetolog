@@ -1,9 +1,17 @@
-.header {
-    position: fixed;
+.al_header {
     top: 0;
     width: 100%;
     height: 80px;
     z-index: 20;
+}
+
+.al_header_input {
+    display: none;
+}
+
+.al_header_site_title {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .al_header_container {

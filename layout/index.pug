@@ -1,8 +1,8 @@
 extends includes/base
 
 block content
-    div.al_index_background.dis_flex_center
-        - var bio = theme.bio || 'A Beautiful Text Site.'
+    div.al_index_background.dis_flex_center.al_full_cover
+        - var bio = config.bio || 'A Beautiful Text Site.'
         - var firstBioChar = bio.substr(0, 1)
         div.al_pos_ab.al_letter.al_index_background_letter= firstBioChar
         h2.al_index_background_bio= bio

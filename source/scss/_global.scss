@@ -25,6 +25,18 @@ a {
     position: absolute;
 }
 
+.al_pos_fixed {
+    position: fixed;
+}
+
+.al_full_cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .al_button {
     display: block;
     text-align: center;
