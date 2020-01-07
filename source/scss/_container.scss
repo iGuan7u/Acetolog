@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 769px) and (max-width: 1199px) {
     .al_main_container {
         margin: 0 35px;
     }
