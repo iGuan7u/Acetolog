@@ -2,7 +2,7 @@ header.al_header.al_pos_fixed
     div.al_header_container.dis_flex_jcenter
         div.al_header_container_left
             div.al_header_site_title
-                a(href="/")= 'iGuan7u'
+                a(href="/")= config.author || theme.author || 'iGuan7u'
         //- div.dis_flex_jcenter
         //-     div.al_header_archives
         //-         a(href="/archives")= 'Archives'
@@ -17,5 +17,3 @@ header.al_header.al_pos_fixed
                 a(href="/archives")= 'Archives'
             div.al_header_setting
                 a(href="https://about.me/iGuan7u")= 'About'
-
-            
