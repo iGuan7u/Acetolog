@@ -30,6 +30,10 @@ google_analytice:
   enable: false
   tracking_id: google_tracking_id
 
+extra_plugin:
+  enable: false
+  url: extra_plugin_js_url
+
 node_sass:
   # outputStyle: nested
   outputStyle: compressed
