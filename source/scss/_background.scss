@@ -10,6 +10,7 @@
     font-size: 600px;
     height: 770px;
     z-index: 11;
+    cursor: default;
 }
 
 .al_index_background_bio {
@@ -22,6 +23,8 @@
     font-size: 48px;
     position: relative;
     z-index: 12;
+    transition: all .4s cubic-bezier(.25, .8, .25, 1);
+    cursor: default;
 
     &:hover {
         text-shadow: 1px 1px 10px rgba($color: #000, $alpha: 0.5);

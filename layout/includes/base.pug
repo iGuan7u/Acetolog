@@ -6,9 +6,12 @@ html(lang=config.language)
     
     body
         include header.pug
-        //- include sidebar.pug
+        include ./sidebar.pug
         block content
         include footer.pug
-        include mtaTencentAnalytice.pug
-        include baiduAnalytice.pug
-        include googleAnalytice.pug
+        script(type='text/javascript', async="async", src=url_for('/javascripts/acelog.js'))
+        include plugin/mtaTencentAnalytice.pug
+        include plugin/baiduAnalytice.pug
+        include plugin/googleAnalytice.pug
+        include plugin/plugin.pug
+        

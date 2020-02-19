@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+body.al_no_scroll {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -13,6 +17,11 @@ a {
 .dis_flex_jcenter {
     display: flex;
     justify-content: center;
+}
+
+.dis_flex_acenter {
+    display: flex;
+    align-items: center;
 }
 
 .dis_flex_center {

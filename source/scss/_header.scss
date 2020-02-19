@@ -5,6 +5,10 @@
     z-index: 20;
 }
 
+.al_svg_symbol {
+    display: none;
+}
+
 .al_header_input {
     display: none;
 }
@@ -24,4 +28,21 @@
 .al_header_container a {
     color: white;
     padding: 0 15px;
+}
+
+.al_header_setting {
+    width: 38px;
+    height: 38px;
+    padding: 10px 12px;
+
+    &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.1);
+    }
+}
+
+.al_header_icon {
+    width: 14px;
+    height: 14px;
+    fill: white;
+    pointer-events: none;
 }

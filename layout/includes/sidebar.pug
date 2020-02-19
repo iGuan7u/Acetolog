@@ -1,0 +1,13 @@
+div.al_sidebar
+  div.al_sidebar_overlay.al_full_cover
+  div.al_pos_fixed.al_sidebar_cnt
+    div.dis_flex_acenter.al_sidebar_header
+      h3= config.title
+      div.al_sidebar_close.al_header_setting
+        svg.al_header_icon
+            use(xmlns="http://www.w3.org/2000/svg" xlink:href="#svg-close")
+    div.al_sidebar_author_cnt
+      div.al_sidebar_author_info
+        h4= config.author
+        img.al_sidebar_avatar(src="https://cdn.iguan7u.cn/image/avatar.jpg")
+        p= config.description

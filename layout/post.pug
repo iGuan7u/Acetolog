@@ -22,7 +22,7 @@ block content
 
                 section#post-body!=page.content
 
-                include ./includes/disqus.pug
+                include ./includes/plugin/disqus.pug
 
             - var prev = page.prev ? page.prev.path : false;
             - var next = page.next ? page.next.path : false;
@@ -39,7 +39,7 @@ block content
                             span.arrow →
 
     if config.highlight.enable
-        script(type='text/javascript', src=url_for('./javascripts/highlight.pack.js'))
+        script(type='text/javascript', src=url_for('javascripts/highlight.pack.js'))
         script!= "document.querySelectorAll('figure.highlight').forEach(function(b){hljs.highlightBlock(b);});"
 
             //- include includes/comment.pug
