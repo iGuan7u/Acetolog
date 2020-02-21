@@ -10,15 +10,15 @@ author: iGuan7u
 description: A beautiful & simple theme.
 
 gitalk:
-  enable: false
-  clientID: github_clientID
-  clientSecret: github_clientSecret
-  repo: you site homepage
-  owner: your username
-  admin: same as [owner]
+  enable: true
+  clientID: 065e38d669f0fa5bff9b
+  clientSecret: 2440e8baec3aec1410a09c994bfb9d53891e04b4
+  repo: iguan7u.github.io
+  owner: iGuan7u
+  admin: iGuan7u
 
 disqus:
-  enable: true
+  enable: false
   shortname: iguan7u
 
 ICPLicense:
