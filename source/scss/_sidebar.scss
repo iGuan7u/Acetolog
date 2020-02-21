@@ -66,3 +66,10 @@
     right: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .al_sidebar_cnt {
+    width: 100%;
+    right: -100%;
+  }
+}
