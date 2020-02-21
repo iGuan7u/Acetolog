@@ -8,6 +8,6 @@ if theme.gitalk.enable
         |     repo: '#{theme.gitalk.repo}',
         |     owner: '#{theme.gitalk.owner}',
         |     admin: '#{theme.gitalk.admin}',
-        |     id: location.pathname,
+        |     id: '#{page.title.slice(0, 50)}',
         | });
         | gitalk.render('al_gitalk_cnt')
