@@ -47,9 +47,8 @@ $: hexo g
 ### Comment
 
 - [Gitalk](https://github.com/gitalk/gitalk)
-**Recommanded**
 Gitalk is based on Github issus. It requires less resources than disqus, saving your website loading time, a lot.
-By enaling `gitalk` config in acetolog theme `theme/Acetolog/_config.yml` to use it.
+By enaling `gitalk` config in acetolog theme `theme/Acetolog/_config.yml` to use it. **Recommanded**
 
 - [Disqus](https://disqus.com)
 You can enable `disqus` config in theme config `theme/Acetolog/_config.yml`.
