@@ -9,6 +9,14 @@ language: en
 author: iGuan7u
 description: A beautiful & simple theme.
 
+gitalk:
+  enable: false
+  clientID: github_clientID
+  clientSecret: github_clientSecret
+  repo: you site homepage
+  owner: your username
+  admin: same as [owner]
+
 disqus:
   enable: false
   shortname: your_disqus_short_name

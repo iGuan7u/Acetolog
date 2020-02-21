@@ -31,7 +31,10 @@ $: cd themes
 $: git clone https://github.com/iGuan7u/Acetolog
 ```
 
-3. Modify hexo config `_config.yml` to use `Acetolog`
+3. Modify hexo config change theme to `Acetolog`
+```
+theme: Acetolog
+```
 
 4. Generate new pages
 ```
@@ -43,7 +46,13 @@ $: hexo g
 
 ### Comment
 
-Acetolog support disqus, you can enable `disqus` config in theme config `theme/Acetolog/_config.yml`.
+- [Gitalk](https://github.com/gitalk/gitalk)
+**Recommanded**
+Gitalk is based on Github issus. It requires less resources than disqus, saving your website loading time, a lot.
+By enaling `gitalk` config in acetolog theme `theme/Acetolog/_config.yml` to use it.
+
+- [Disqus](https://disqus.com)
+You can enable `disqus` config in theme config `theme/Acetolog/_config.yml`.
 
 ### Analytice
 
