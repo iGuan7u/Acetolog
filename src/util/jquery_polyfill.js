@@ -25,6 +25,10 @@ class JQueryObject {
             this.nodes[index].classList.remove(className)
         }
     }
+
+    attr = attributeName => {
+        return this.nodes[0].getAttribute(attributeName)
+    }
 }
 
 window.$ = function(queryObject) {
