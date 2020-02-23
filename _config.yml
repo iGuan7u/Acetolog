@@ -1,13 +1,13 @@
 root: /
 
 Home: /
-Archives: /archives
-About: /about
 
 language: en
 
 author: iGuan7u
 description: A beautiful & simple theme.
+
+# Comment
 
 gitalk:
   enable: true
@@ -21,9 +21,35 @@ disqus:
   enable: false
   shortname: iguan7u
 
-ICPLicense:
+# Contact_Info
+# Contact info will be shown on the side bar.
+
+contact:
   enable: true
-  content: 粤ICP备16128736号-2
+  description: '期待与你的联系。'
+
+  twitter:
+    enable: true
+    username: iGuan7u
+
+  github:
+    enable: true
+    username: iGuan7u
+
+  weibo:
+    enable: false
+    username: weibo_username
+
+  facebook:
+    enable: false
+    username: facebook_username
+
+  instagram:
+    enable: false
+    username: instagram_username
+
+
+# Analytice
 
 mta_analytics:
   enable: true
@@ -38,9 +64,20 @@ google_analytice:
   enable: false
   tracking_id: google_tracking_id
 
+# Website ICPLicense
+# which is useful in China mainland.
+
+ICPLicense:
+  enable: true
+  content: 粤ICP备16128736号-2
+
+# EtraPlugin
+
 extra_plugin:
   enable: false
   url: extra_plugin_js_url
+
+# Development Setting
 
 node_sass:
   # outputStyle: nested

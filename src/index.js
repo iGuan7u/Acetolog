@@ -10,3 +10,7 @@ $('.al_sidebar_close,.al_sidebar_overlay').click(event => {
     $('body').removeClass('al_no_scroll')
     event.stopPropagation()
 })
+
+$('.al_social_icon_cnt').click(event => {
+    window.open($(event.target).attr('data_link'))
+})

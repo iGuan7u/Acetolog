@@ -67,6 +67,40 @@
   }
 }
 
+.al_sidebar_contact_info {
+  margin-top: 50px;
+}
+
+.al_sidebar_social_widget {
+  margin-top: 24px;
+}
+
+.al_social_icon_cnt {
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  #facebook {
+    fill: #3b5c95;
+  }
+  #twitter{
+    fill: #00aaf0;
+  }
+  #instagram {
+    fill: #cb3c9f;
+  }
+  #weibo{
+    fill: #d2292b;
+  }
+  margin: 5px;
+}
+
+.al_social_icon {
+  pointer-events: none;
+  width: 46px;
+  height: 46px;
+}
+
 @media screen and (max-width: 768px) {
   .al_sidebar_cnt {
     width: 100%;
