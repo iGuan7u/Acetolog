@@ -15,7 +15,7 @@ block content
                     h1.al_page_title= page.title
                     div.al_page_info.dis_flex
                         div.al_page_content_info
-                            |#{date(page.date, 'MMM DD, YYYY h:mm')}
+                            |#{date(page.date, 'MMM DD, YYYY h:mm A')}
                         div.al_page_content_info
                             |#{wordcount(page.content)} words
                         div.al_page_content_info
