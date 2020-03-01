@@ -60,19 +60,19 @@ a {
 
 .al_button_red {
     color: white;
-    background: $theme_color;
-    border: 1px solid $theme_color;
+    background: $theme_highlighted_color;
+    border: 1px solid $theme_highlighted_color;
 }
 
 .al_button_white {
     background: white;
-    color: $theme_color;
-    border: 1px solid $theme_color;
+    color: $theme_highlighted_color;
+    border: 1px solid $theme_highlighted_color;
 }
 
 .al_letter {
     text-transform: uppercase;
-    color: rgba(0,0,0,0.1);
+    color: rgba(252,74,26,0.1);
     font-size: 190px;
     font-weight: 600;
     display: block;

@@ -50,7 +50,7 @@
         li {
             &::before {
                 content: "•";
-                color: $theme_color;
+                color: $theme_highlighted_color;
                 display: inline-block;
                 margin-right: 10px;
             }
@@ -67,7 +67,7 @@
             &::before {
                 content: counter(ol) ".";
                 counter-increment: ol;
-                color: $theme_color;
+                color: $theme_highlighted_color;
                 text-align: right;
                 display: inline-block;
                 min-width: 1em;
