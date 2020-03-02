@@ -7,6 +7,11 @@ language: en
 author: iGuan7u
 description: A beautiful & simple theme.
 
+# AvatorURL
+# it would be shown on sidecar.
+
+avator: https://yourAvatorURL
+
 # Comment
 
 gitalk:

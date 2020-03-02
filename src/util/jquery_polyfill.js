@@ -7,7 +7,6 @@ class JQueryObject {
     }
 
     click = callback => {
-        console.log('length', this.nodes.length)
         for(let index = 0; index < this.nodes.length; index++) {
             this.nodes[index].addEventListener('click', callback)
         }
