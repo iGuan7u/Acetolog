@@ -9,7 +9,7 @@ div.al_sidebar
     div.al_sidebar_author_cnt
       div.al_sidebar_author_info
         h4= config.author
-        img.al_sidebar_avatar(src=config.avatar)
+        img.al_sidebar_avatar(src=config.avatar || theme.avatar || '')
         p= config.description
       
       if theme.contact.enable
