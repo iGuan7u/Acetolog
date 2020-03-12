@@ -10,7 +10,7 @@
 }
 
 .al_sidebar_author_cnt {
-  background-color: white;
+  background-color: $background_color;
 }
 
 .al_sidebar_overlay {
@@ -45,7 +45,6 @@
   p {
     font-size: 14px;
     line-height: 26px;
-    color: #444;
   }
 
   img {

@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: dark) {
+    h1, h2, h3, h4, span, div, b, strong, i, em, p, a, li {
+        color: #ccc;
+    }
+
+    .al_fake_background, .al_index_footer {
+        background-color: $dark_fake_background_color;
+    }
+
+    .al_main_container, .al_sidebar_author_cnt {
+        background-color: $dark_background_color;
+    }
+
+    .al_index_post_title a {
+        color: $dark_list_title_color;
+    }
+
+    .al_index_post_excerpt {
+        color: $dark_list_desc_color;
+    }
+
+    .al_letter {
+        color: rgba($color: #fff, $alpha: 0.1);
+    }
+}

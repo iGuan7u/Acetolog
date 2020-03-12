@@ -58,14 +58,13 @@ a {
     }
 }
 
-.al_button_red {
+.al_button_theme {
     color: white;
     background: $theme_color;
     border: 1px solid $theme_color;
 }
 
-.al_button_white {
-    background: white;
+.al_button_transparent {
     color: $theme_color;
     border: 1px solid $theme_color;
 }
