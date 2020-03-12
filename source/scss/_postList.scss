@@ -59,7 +59,7 @@
 
     a {
         display: block;
-        color: #333;
+        color: $list_title_color;
         word-wrap: break-word;
     }
 
@@ -95,7 +95,7 @@
 }
 
 .al_index_post_excerpt {
-    color: #555;
+    color: $list_desc_color;
     line-height: 30px;
 }
 
@@ -105,7 +105,7 @@
     height: 235px;
     flex-direction: column;
     position: relative;
-    background-color: #f8f8f8;
+    background-color: $fake_background_color;
     z-index: 11;
 
     a {
