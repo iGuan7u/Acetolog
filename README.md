@@ -63,6 +63,15 @@ Acetolog support:
 
 You can modify the theme config `theme/Acetolog/_config.yml` to enable which one you prefer.
 
+### Dark Mode
+
+Now Acetolog support **Dark Mode**!
+You can change the color you prefer in `theme/Acetolog/source/scss/_var.scss`, of course, you can disable it by commented the code below in `theme/Acetolog/source/css/style.scss`
+
+```
+@import "../scss/darkTheme";
+```
+
 ### Main Theme Color
 
 You can modify the main color to your prefer one, which in `$theme_color` in `theme/Acetolog/source/scss/_var.scss`.
