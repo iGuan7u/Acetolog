@@ -31,7 +31,10 @@
 
     // gitalk
     .gt-comment-content {
-        background-color: #090601;
-        box-shadow: 0 0.625em 3.75em 0 #0b0b0b;
+        background-color: #090601 !important;
+
+        &:hover {
+            box-shadow: 0 0.625em 3.75em 0 #0b0b0b !important;
+        }
     }
 }
