@@ -6,6 +6,8 @@ block extra_style
     link(rel='stylesheet' href=url_for('./css/atom-one-dark.css'))
 
 block content
+    div.dis_flex_center.al_lightbox_cnt.al_full_cover
+        img.al_lightbox_img
     div.al_page_background.dis_flex_center.al_full_cover
     div.al_page_container
         div.al_pos_ab.al_fake_background
@@ -27,9 +29,11 @@ block content
 
                 section#post-body!=page.content
 
+                //- Comment Plugins
                 include ./includes/plugin/gitalk.pug
                 include ./includes/plugin/disqus.pug
 
+            //- Navigate Element
             - var prev = page.prev ? page.prev.path : false;
             - var next = page.next ? page.next.path : false;
             nav.dis_flex.post-nav
@@ -44,6 +48,7 @@ block content
                             | Older Posts
                             span.arrow →
 
+    //- HighLight Plugin
     if config.highlight.enable
         script(type='text/javascript', src=url_for('javascripts/highlight.pack.js'))
         script!= "document.querySelectorAll('figure.highlight').forEach(function(b){hljs.highlightBlock(b);});"
