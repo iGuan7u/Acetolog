@@ -2,15 +2,15 @@ const path = require('path');
 
 var config =  {
 	mode: "development",
-	entry: "./src/index.js",
+	entry: "./src/index.ts",
 	output: {
 		path: path.resolve(__dirname, "source/javascripts"),
 		filename: "acelog.js",
 	},
 	module: {
-		rules: [{
-			test: /\.js$/,
-			loader: "babel-loader",
+		rules: [{ 
+			test: /\.tsx?$/,
+			loader: "ts-loader" 
 		}]
 	}
 }
