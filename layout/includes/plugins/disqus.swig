@@ -1,0 +1,12 @@
+{% if theme.disqus.enable %}
+    <div id="disqus_thread" clas="al_disqus">
+    <script>
+        (function(){
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//{{ theme.disqus.shortname }}.disqus.com/embed.js';
+          (document.head || document.body).appendChild(dsq);
+        }());
+    </script>
+{% endif %}

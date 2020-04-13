@@ -73,3 +73,35 @@ mark {
 	padding: 0.2em 0.5em;
 	background-color: #fcffc0
 }
+
+figure.highlight {
+	overflow: hidden;
+	overflow-x: auto;
+	background: #282a36;
+	padding: 10px;
+	font-size: 14px;
+
+	pre {
+		margin: 0;
+	}
+
+	td {
+        border: none;
+        padding: 0;
+	}
+	
+	td.gutter {
+		text-align: right;
+
+		pre {
+			padding-right: 15px;
+		}
+	}
+}
+
+code:not(.hljs) {
+	font-family: "Menlo-Regular";
+	border: solid 1px #dedede;
+	padding: 0.2em 0.5em;
+	font-size: 0.9em
+}

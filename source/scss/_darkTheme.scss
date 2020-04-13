@@ -24,7 +24,7 @@
     }
 
     .al_main_page_container {
-        code, figure.plain {
+        code:not(.hljs) {
             background-color: #333;
         }
     }

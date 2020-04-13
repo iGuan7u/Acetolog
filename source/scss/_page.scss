@@ -29,8 +29,6 @@
     table {
         border-collapse: collapse;
         border-spacing: 0;
-        width: 100%;
-        table-layout: fixed;
     }
 
     ul, ol:not(.toc):not(.toc-child) {
@@ -106,14 +104,6 @@
         border: 0;
         background-color: #dedede;
         margin: -1px auto 1.57143em auto
-    }
-
-    code, figure.plain {
-        font-family: "Menlo-Regular";
-        // display: inline;
-        border: solid 1px #dedede;
-        padding: 0.2em 0.5em;
-        font-size: 0.9em
     }
 }
 
