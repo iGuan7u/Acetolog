@@ -8,7 +8,7 @@
     <body>
         {% include "./headerbar.swig" %}
         {% include "./sidebar.swig" %}
-        {% block content %}{% endblock  %}
+        {% block content %}{% endblock %}
         {% include "./footer.swig" %}
         <script type="text/javascript" async="async" src="{{ url_for('/javascripts/acelog.js') }}"></script>
         {% include "./plugins/mtaTencentAnalytice.swig" %}

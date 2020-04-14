@@ -29,41 +29,46 @@
                         {# Facebook widget #}
                         {% if theme.contact.facebook.enable === true %}
                             <div class="al_social_icon_cnt" data_link="https://www.facebook.com/{{ theme.contact.facebook.username }}">
-                            <svg class="al_social_icon" id="facebook">
-                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
-                            </svg>
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
                         {% endif %}
 
                         {# instagram widget #}
                         {% if theme.contact.instagram.enable === true %}
                             <div class="al_social_icon_cnt" data_link="https://www.instagram.com/{{ theme.contact.instagram.username }}">
-                            <svg class="al_social_icon" id="instagram">
-                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
-                            </svg>
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
                         {% endif %}
 
                         {# weibo widget #}
                         {% if theme.contact.weibo.enable === true %}
                             <div class="al_social_icon_cnt" data_link="https://weibo.com/{{ theme.contact.weibo.username }}/">
-                            <svg class="al_social_icon" id="weibo">
-                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_weibo"></use>
-                            </svg>
+                                <svg class="al_social_icon" id="weibo">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_weibo"></use>
+                                </svg>
+                            </div>
                         {% endif %}
 
                         {# github widget #}
                         {% if theme.contact.github.enable === true %}
                             <div class="al_social_icon_cnt" data_link="https://www.github.com/{{ theme.contact.github.username }}">
-                            <svg class="al_social_icon" id="github">
-                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
-                            </svg>
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
                         {% endif %}
 
                         {# twitter widget #}
                         {% if theme.contact.twitter.enable === true %}
                             <div class="al_social_icon_cnt" data_link="https://www.twitter.com/{{ theme.contact.twitter.username }}/">
-                            <svg class="al_social_icon" id="twitter">
-                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_twitter"></use>
-                            </svg>
+                                <svg class="al_social_icon" id="twitter">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_twitter"></use>
+                                </svg>
+                            </div>
                         {% endif %}
                     </div>
                 </div>
