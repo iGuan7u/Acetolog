@@ -1,0 +1,14 @@
+{%  if theme.gitalk.enable %}
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "{{ theme.gitalk.clientID }}",
+            clientSecret: "{{ theme.gitalk.clientSecret }}",
+            repo: "{{ theme.gitalk.repo }}",
+            owner: "{{ theme.gitalk.owner }}",
+            admin: "{{ theme.gitalk.admin }}",
+            id: "{{ page.title.slice(0, 50) }}",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
