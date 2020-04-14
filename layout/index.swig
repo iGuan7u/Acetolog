@@ -3,10 +3,10 @@
 {% block content %}
     <div class="al_index_background dis_flex_center al_full_cover">
         <div class="al_pos_ab al_letter al_index_background_letter">
-            {{ config.bio.substr(0, 1) }}
+            {{ config.bio|default('A Simple Theme')|first|upper }}
         </div>
         <h2 class="al_index_background_bio">
-            {{ config.bio }}
+            {{ config.bio|default('A Simple Theme') }}
         </h2>
     </div>
 
@@ -20,29 +20,33 @@
             </div>
 
             <ul class="al_post_list">
-                {% for item in site.posts.sort('date') %}
+                {% for item in page.posts %}
                     <li class="al_index_pageList_item al_index_page_seperator">
                         <div class="al_index_post_title_cnt dis_flex">
                             <div class="al_pos_ab al_letter al_index_post_title_letter">
-                                {{ item.title|first|upper }}
+                                {{ item.title|default('No Title')|first|upper }}
                             </div>
                             <h2 class="al_index_post_title">
                                 <a href="{{ url_for(item.link || item.path) }}">
-                                    {{ item.title }}
+                                    {{ item.title|default('No Title') }}
                                 </a>
                             </h2>
                             <div class="al_index_post_extra dis_flex">
                                 <div class="al_index_post_date al_index_post_extra_item">
                                     {{ item.date|date('F d') }}
                                 </div>
-                                <div class="al_index_post_read_time">
-                                    {{ min2read(item.content) }} Min Read
-                                </div>
+
+                                {% if min2read %}
+                                    <div class="al_index_post_read_time">
+                                        {{ min2read(item.content) }} Min Read
+                                    </div>
+                                {% endif %}
+
                             </div>
                         </div>
                         <div class="al_index_post_excerpt_cnt">
                             <p class="al_index_post_excerpt">
-                                {{ item.excerpt + '...' }}
+                                {{ item.excerpt|striptags }}
                             </p>
                         </div>
                         <div class="al_index_post_button_cnt dis_flex">

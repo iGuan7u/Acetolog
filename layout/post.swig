@@ -18,18 +18,24 @@
             <article class="al_article">
                 <header>
                     <h1 class="al_page_title">
-                        {{ page.title }}
+                        {{ page.title|default('No Title') }}
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
                             {{ page.date|date('F d, Y h:m A') }}
                         </div>
-                        <div class="al_page_content_info">
-                            {{ wordcount(page.content) }} words
-                        </div>
-                        <div class="al_page_content_info">
-                            {{ min2read(page.content) }} minutes read
-                        </div>
+
+                        {% if wordcount %}
+                            <div class="al_page_content_info">
+                                {{ wordcount(page.content) }} words
+                            </div>
+                        {% endif %}
+
+                        {% if min2read %}
+                            <div class="al_page_content_info">
+                                {{ min2read(page.content) }} minutes read
+                            </div>
+                        {% endif %}
                         <span class="tags"></span>
                     </div>
                 </header>
