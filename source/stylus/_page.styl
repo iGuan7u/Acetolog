@@ -11,7 +11,7 @@
 }
 
 .al_main_page_container {
-    font-size: 15px;
+    font-size: 16px;
 
     img {
         max-width: 100%;
@@ -24,55 +24,6 @@
 
     a {
         color: $theme_color;
-    }
-
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-
-    ul, ol:not(.toc):not(.toc-child) {
-        padding-inline-start: 0px;
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        p {
-            display: inline;
-        }
-    }
-
-    ul {
-        list-style: none;
-
-        li {
-            &::before {
-                content: "•";
-                color: $theme_color;
-                display: inline-block;
-                margin-right: 10px;
-            }
-            text-indent: -0.7em;
-        }
-    }
-
-    ol { 
-        counter-reset: ol 0;
-        li {
-            display: block;
-            text-indent: -1.45em;
-
-            &::before {
-                content: counter(ol) ".";
-                counter-increment: ol;
-                color: $theme_color;
-                text-align: right;
-                display: inline-block;
-                min-width: 1em;
-                margin-right: 0.5em;
-            }
-        }
     }
 
     q, blockquote {

@@ -9,19 +9,11 @@
 	margin: 0 auto;
 }
 
-caption,th,td {
-	text-align: left;
-	font-weight: normal;
-	vertical-align: middle
-}
-
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
 	display: block
 }
 
 * {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box
 }
 
@@ -80,6 +72,7 @@ figure.highlight {
 	background: #282a36;
 	padding: 10px;
 	font-size: 14px;
+	color: #ccc;
 
 	pre {
 		margin: 0;
@@ -104,4 +97,65 @@ code:not(.hljs) {
 	border: solid 1px #dedede;
 	padding: 0.2em 0.5em;
 	font-size: 0.9em
+}
+
+#post-body > table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	display: block;
+	line-height: 1.5;
+
+	th, td {
+		padding: 6px 13px;
+		border: 1px solid #dfe2e5;
+	}
+
+	tr:nth-child(2n) {
+		background-color: #f6f8fa;
+	}
+}
+
+#post-body > ul, #post-body > ol {
+	padding-inline-start: 0px;
+	
+	li {
+		margin-bottom: 5px;
+	}
+
+	p {
+		display: inline;
+	}
+}
+
+ul {
+	list-style: none;
+
+	li {
+		&::before {
+			content: "•";
+			color: $theme_color;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		text-indent: -0.7em;
+	}
+}
+
+ol { 
+	counter-reset: ol 0;
+	li {
+		display: block;
+		text-indent: -1.45em;
+
+		&::before {
+			content: counter(ol) ".";
+			counter-increment: ol;
+			color: $theme_color;
+			text-align: right;
+			display: inline-block;
+			min-width: 1em;
+			margin-right: 0.5em;
+		}
+	}
 }
