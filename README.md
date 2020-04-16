@@ -35,16 +35,16 @@ $: hexo g
 
 ## Custom
 
-### Comment
+### Comment:
 
 - [Gitalk](https://github.com/gitalk/gitalk)
 Gitalk is based on Github issus. It requires less resources than disqus, saving your website loading time, a lot.
-By enaling `gitalk` config in acetolog theme `theme/Acetolog/_config.yml` to use it. **Recommanded**
+By enaling `gitalk` config in acetolog theme `themes/Acetolog/_config.yml` to use it. **Recommanded**
 
 - [Disqus](https://disqus.com)
-You can enable `disqus` config in theme config `theme/Acetolog/_config.yml`.
+You can enable `disqus` config in theme config `themes/Acetolog/_config.yml`.
 
-### Analytice
+### Analytice:
 
 Acetolog support: 
 
@@ -52,13 +52,19 @@ Acetolog support:
 - [TencentAnalytice](https://mta.qq.com)
 - [BaiduAnalytice](https://tongji.baidu.com)
 
-You can modify the theme config `theme/Acetolog/_config.yml` to enable which one you prefer.
+You can modify the theme config `themes/Acetolog/_config.yml` to enable which one you prefer.
 
-### Code Block Highlight
+### Code Block Highlight:
 
 Acetolog support code block highlight by using hexo built-in function. Make sure you enabled `highlight.enable` and`highlight.hljs` in your blog `_config.yml`.
 
-### Read Time
+```yml
+highlight:
+  enable: true
+  hljs: true  # MAKE SURE ENABLE IT!
+```
+
+### Read Time:
 
 Acetolog can display each page's word count nicely, you can enable it by installing `hexo-wordcount`.
 
@@ -68,7 +74,7 @@ $: npm intall hexo-wordcount
 
 That's it, no more configuration.
 
-### Excerpt
+### Excerpt:
 
 Acetolog can display page's excerpt in main page. If you don't setting excerpt in each page, you can just setting it automatically by installing `hexo-auto-excerpt`.
 
@@ -78,22 +84,22 @@ $: npm intall hexo-auto-excerpt
 
 That's it, no more configuration.
 
-### Dark Mode
+### Dark Mode:
 
 Now Acetolog support **Dark Mode**!
-You can change the color you prefer in `theme/Acetolog/source/stylus/_var.styl`, of course, you can disable it by commented the code below in `theme/Acetolog/source/css/style.styl`
+You can change the color you prefer in `themes/Acetolog/source/stylus/_var.styl`, of course, you can disable it by commented the code below in `themes/Acetolog/source/css/style.styl`
 
 ```
 @import "../stylus/darkTheme.styl";
 ```
 
-### Main Theme Color
+### Main Theme Color:
 
-You can modify the main color to your prefer one, which in `$theme_color` in `theme/Acetolog/source/stylus/_var.styl`.
+You can modify the main color to your prefer one, which in `$theme_color` in `themes/Acetolog/source/stylus/_var.styl`.
 
-### IPC License
+### IPC License:
 
-You can enable it in theme config `theme/Acetolog/_config.yml`, chinese website may need it.
+You can enable it in theme config `themes/Acetolog/_config.yml`, chinese website may need it.
 
 ## License
 MIT

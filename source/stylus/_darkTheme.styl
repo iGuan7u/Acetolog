@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: dark) {
-    h1, h2, h3, h4, span, div, b, strong, i, em, p, a, li {
+    .al_main_container {
         color: #ccc;
     }
 
@@ -26,6 +26,16 @@
     .al_main_page_container {
         code:not(.hljs) {
             background-color: #333;
+        }
+    }
+
+    #post-body > table {
+        tr:nth-child(2n) {
+            background-color: #09070e;
+        }
+
+        th, td {
+            border: 1px solid #888;
         }
     }
 
