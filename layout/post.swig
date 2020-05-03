@@ -14,7 +14,7 @@
     <div class="al_page_background dis_flex_center al_full_cover"></div>
     <div class="al_page_container">
         <div class="al_pos_ab al_fake_background"></div>
-        <div class="al_main_container al_main_page_container">
+        <div class="al_main_container al_shadow al_main_page_container">
             <article class="al_article">
                 <header>
                     <h1 class="al_page_title">
@@ -56,24 +56,23 @@
                 {% include "./includes/plugins/disqus.swig" %}
 
             {# Navigate Element #}
-            <nav class="dis_flex post-nav">
-                <span class="prev">
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="{{ url_for(page.prev.path) }}">
                     {% if page.prev %}
-                        <a href="{{ url_for(page.prev.path) }}">
-                            <span class="arrow">
-                                ← 
-                            </span>Newer Posts
-                        </a>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">{{ page.prev.title }}</span>
                     {% endif %}
-                </span>
-                <span class="next">
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="{{ url_for(page.next.path) }}">
                     {% if page.next %}
-                        <a href="{{ url_for(page.next.path) }}">
-                            Older Posts
-                            <span class="arrow"> → </span>
-                        </a>
+                        <span class="al_text_ellipsis al_post_nav_desc">{{ page.next.title }}</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
                     {% endif %}
-                </span>
+                </a>
             </nav>
         </div>
     </div>
