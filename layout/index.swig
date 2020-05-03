@@ -12,7 +12,7 @@
 
     <div class="al_index_container">
         <div class="al_pos_ab al_fake_background"></div>
-        <div class="al_main_container">
+        <div class="al_main_container al_shadow">
             <div class="al_section_container dis_flex_jcenter">
                 <div class="section_header">
                     LATEST PAGES
@@ -61,21 +61,23 @@
                 {% endfor %}
             </ul>
 
-            <nav class="dis_flex post-nav">
-                <span class="prev">
-                    {% if page.prev === true %}
-                        <a href="{{ page.prev_link }}">
-                            <span class="arrow"> ← </span>Newer Posts
-                        </a>
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="{{ page.next_link || '/' }}">
+                    {% if page.prev !== 0 %}
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span>Newer Posts</span>
                     {% endif %}
-                </span>
-                <span class="next">
-                    {% if page.next === true %}
-                        <a href="{{ page.next_link }}">
-                            Older Posts<span class="arrow"> →</span>
-                        </a>
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="{{ page.next_link || '/' }}">
+                    {% if page.next !== 0 %}
+                        <span>Older Posts</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
                     {% endif %}
-                </span>
+                </a>
             </nav>
         </div>
     </div>
