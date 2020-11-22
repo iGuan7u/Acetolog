@@ -33,7 +33,7 @@
                             </h2>
                             <div class="al_index_post_extra dis_flex">
                                 <div class="al_index_post_date al_index_post_extra_item">
-                                    {{ item.date|date('F d') }}
+                                    {{ item.date.format(config.date_format + ' ' + config.time_format || "MMMM Do YYYY") }}
                                 </div>
 
                                 {% if min2read %}

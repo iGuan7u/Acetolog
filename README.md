@@ -10,6 +10,12 @@ A beautiful & simple hexo theme. Inspired by [typology](https://demo.mekshq.com/
 
 Acetolog **no longer** depends on any other libraries. Since you install hexo successfully, you can switch theme to Acetolog, Smoothly. (Just as hexo-theme-next did.)
 
+But in Hexo 5.0, `hexo-renderer-swig` plugin seems be removed by hexo, although [Docs](https://hexo.io/docs/themes) still insists that Swig template engine provides by hexo. Make sure you have install this plugin in project.
+
+```
+$: npm install hexo-renderer-swig --save
+```
+
 ## Install
 
 1. Enter hexo theme folder
