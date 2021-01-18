@@ -1,5 +1,5 @@
 {%  if theme.gitalk.enable %}
-    <div id="al_gitalk_cnt">
+    <div id="al_gitalk_cnt" />
     <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     <script>
         var gitalk = new Gitalk({
