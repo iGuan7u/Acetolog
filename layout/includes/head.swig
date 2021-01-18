@@ -1,9 +1,9 @@
 <title>{{ page.title || config.subtitle || '' }}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
-<link rel="stylesheet", href="{{ url_for('css/style.css') }}">
-<link rel="shortcut icon", href="{{ url_for('favicon.ico') }}">
-<link rel="apple-touch-icon", href="{{ url_for('apple-touch-icon.png') }}">
-<link rel="icon", type: 'image/png', sizes: '16x16', href="{{ url_for('favicon-16x16.png') }}">
-<link rel="icon", type: 'image/png', sizes: '32x32', href="{{ url_for('favicon-32x32.png') }}">
+<link rel="stylesheet" href="{{ url_for('css/style.css') }}">
+<link rel="shortcut icon" href="{{ url_for('favicon.ico') }}">
+<link rel="apple-touch-icon" href="{{ url_for('apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('favicon-16x16.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('favicon-32x32.png') }}">
 <link rel="manifest" href="{{ url_for('site.webmanifest') }}">
