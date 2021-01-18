@@ -107,7 +107,7 @@ You can modify the main color to your prefer one, which in `$theme_color` in `th
 ### Favicon:
 
 [favicon.io](https://favicon.io) is the recommended favicon generation tool:
-just generate, download, got `favicon.io.zip`, and unzip to your `source` directory.
+just generate, download, got `favicon_io.zip`, and unzip to your `source` directory.
 
 
 ### IPC License:
