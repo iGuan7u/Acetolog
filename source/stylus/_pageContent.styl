@@ -19,7 +19,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 
 u {
 	text-decoration: none;
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%,#e06e73 50%);
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, $theme_color_light 50%);
 	background-repeat: repeat-x;
 	background-size: 2px 2px;
 	background-position: 0 1.05em
@@ -42,7 +42,7 @@ blockquote {
 	display: block;
 	margin-left: -1em;
 	padding-left: 0.8em;
-	border-left: 0.2em solid #e06e73
+	border-left: 0.2em solid $theme_color_light;
 }
 
 .arrow svg #rod {
@@ -76,7 +76,7 @@ figure.highlight {
         border: none;
         padding: 0;
 	}
-	
+
 	td.gutter {
 		text-align: right;
 
@@ -112,7 +112,7 @@ code:not(.hljs) {
 
 #post-body > ul, #post-body > ol {
 	padding-inline-start: 0px;
-	
+
 	li {
 		margin-bottom: 5px;
 	}
@@ -136,7 +136,7 @@ code:not(.hljs) {
 	}
 }
 
-ol { 
+ol {
 	counter-reset: ol 0;
 	li {
 		display: block;
