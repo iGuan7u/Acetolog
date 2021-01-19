@@ -69,13 +69,16 @@
 
 .al_page_content_info {
     margin-right: 15px;
-    &::after {
-        content: "/";
-        right: -7px;
-        position: relative;
-    }
     font-size: 13px;
     color: #888;
+
+    &:not(:last-of-type) {
+        &::after {
+            content: "/";
+            right: -7px;
+            position: relative;
+        }
+    }
 }
 
 .al_disqus {

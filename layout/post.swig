@@ -22,7 +22,7 @@
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
-                            {{ page.date|date('F d, Y h:m A') }}
+                            {{ page.date.format('ddd MMMM D, Y hh:mm A') }}
                         </div>
 
                         {% if wordcount %}

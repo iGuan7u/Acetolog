@@ -103,6 +103,13 @@ You can change the color you prefer in `themes/Acetolog/source/stylus/_var.styl`
 
 You can modify the main color to your prefer one, which in `$theme_color` in `themes/Acetolog/source/stylus/_var.styl`.
 
+
+### Favicon:
+
+[favicon.io](https://favicon.io) is the recommended favicon generation tool:
+just generate, download, got `favicon_io.zip`, and unzip to your `source` directory.
+
+
 ### IPC License:
 
 You can enable it in theme config `themes/Acetolog/_config.yml`, chinese website may need it.
