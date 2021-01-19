@@ -101,7 +101,8 @@ You can change the color you prefer in `themes/Acetolog/source/stylus/_var.styl`
 
 ### Main Theme Color:
 
-You can modify the main color to your prefer one, which in `$theme_color` in `themes/Acetolog/source/stylus/_var.styl`.
+You can modify the main colors to your preferred,
+they are `$theme_color` and `$theme_color_light` in `themes/Acetolog/source/stylus/_var.styl`.
 
 
 ### Favicon:
