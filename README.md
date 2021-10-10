@@ -54,9 +54,10 @@ You can enable `disqus` config in theme config `themes/Acetolog/_config.yml`.
 
 Acetolog support: 
 
+- [UmamiAnalytice](https://umami.is/)
 - [GoogleAnalytice](https://analytics.google.com)
-- [TencentAnalytice](https://mta.qq.com)
 - [BaiduAnalytice](https://tongji.baidu.com)
+- ~~[TencentAnalytice](https://mta.qq.com)~~
 
 You can modify the theme config `themes/Acetolog/_config.yml` to enable which one you prefer.
 

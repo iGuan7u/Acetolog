@@ -56,10 +56,11 @@ contact:
 
 # Analytice
 
-mta_analytics:
+## Recommended
+umami_analytice:
   enable: false
-  name: mta_analytics_name
-  sid: mta_analytics_sid
+  website_id: umami_website_id
+  js_src: umami_js_src
 
 baidu_analytics:
   enable: false
