@@ -14,6 +14,7 @@
         {% include "./plugins/mtaTencentAnalytice.swig" %}
         {% include "./plugins/baiduAnalytice.swig" %}
         {% include "./plugins/googleAnalytice.swig" %}
+        {% include "./plugins/umamiAnalytice.swig" %}
         {% include "./plugins/plugin.swig" %}
     </body>
 </html>

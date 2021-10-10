@@ -56,10 +56,11 @@ contact:
 
 # Analytice
 
-mta_analytics:
+## Recommended
+umami_analytice:
   enable: true
-  name: MTAH5
-  sid: 500681628
+  website_id: cf92e6d8-fd85-4140-b65a-c4de8573222b
+  js_src: https://umami.iguan7u.cn/umami.js
 
 baidu_analytics:
   enable: false
