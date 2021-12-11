@@ -5,7 +5,7 @@
 
     {# ICPLicense #}
     {% if theme.ICPLicense.enable === true %}
-        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+        <div class="al_index_footer_item" onclick="window.open('https://beian.miit.gov.cn')")>
             {{ theme.ICPLicense.content }}
         </div>
     {% endif %}
