@@ -53,7 +53,7 @@
                             <a class="al_button al_button_theme al_index_post_button" href="{{ item.link || item.path }}">
                                 READ ON
                             </a>
-                            <a class="al_button al_button_transparent al_index_post_button" href="//getpocket.com/edit?url={{ config.url + '/' + postURL }}">
+                            <a class="al_button al_button_transparent al_index_post_button" href="//getpocket.com/edit?url={{ config.url + '/' + item.path }}">
                                 READ LATER
                             </a>
                         </div>
