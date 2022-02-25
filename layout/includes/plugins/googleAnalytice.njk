@@ -1,0 +1,4 @@
+{% if theme.google_analytice.enable === true %}
+    <script src="//www.googletagmanager.com/gtag/js?id={{theme.google_analytice.tracking_id}}"></script>
+    <script>window.dataLayer=window.dataLayeror[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+{% endif %}
