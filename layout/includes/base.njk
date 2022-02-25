@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="{{ config.language }}">
+    <head>
+        {% include "./head.njk" %}
+        {% block extra_style %}{% endblock  %}
+    </head>
+    <body>
+        {% include "./headerbar.njk" %}
+        {% include "./sidebar.njk" %}
+        {% block content %}{% endblock %}
+        {% include "./footer.njk" %}
+        <script type="text/javascript" async="async" src="{{ url_for('/javascripts/acelog.js') }}"></script>
+        {% include "./plugins/mtaTencentAnalytice.njk" %}
+        {% include "./plugins/baiduAnalytice.njk" %}
+        {% include "./plugins/googleAnalytice.njk" %}
+        {% include "./plugins/umamiAnalytice.njk" %}
+        {% include "./plugins/plugin.njk" %}
+    </body>
+</html>
+        

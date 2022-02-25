@@ -1,5 +1,4 @@
-{% extends './includes/base.swig' %}
-
+{% extends './includes/base.njk' %}
 {% block content %}
     <div class="al_index_background dis_flex_center al_full_cover">
         <div class="al_pos_ab al_letter al_index_background_letter">
@@ -9,7 +8,6 @@
             {{ config.bio|default('A Simple Theme') }}
         </h2>
     </div>
-
     <div class="al_index_container">
         <div class="al_pos_ab al_fake_background"></div>
         <div class="al_main_container al_shadow">
@@ -18,30 +16,27 @@
                     LATEST PAGES
                 </div>
             </div>
-
             <ul class="al_post_list">
-                {% for item in page.posts %}
+                {% for item in page.posts.toArray() %}
                     <li class="al_index_pageList_item al_index_page_seperator">
                         <div class="al_index_post_title_cnt dis_flex">
                             <div class="al_pos_ab al_letter al_index_post_title_letter">
-                                {{ item.title|default('No Title')|first|upper }}
+                                {{ (item.title or 'No Title') | first | upper }}
                             </div>
                             <h2 class="al_index_post_title">
-                                <a href="{{ url_for(item.link || item.path) }}">
-                                    {{ item.title|default('No Title') }}
+                                <a href="{{ url_for(item.path) }}">
+                                    {{ item.title or 'No Title' }}
                                 </a>
                             </h2>
                             <div class="al_index_post_extra dis_flex">
                                 <div class="al_index_post_date al_index_post_extra_item">
-                                    {{ item.date.format(config.date_format + ' ' + config.time_format || "MMMM Do YYYY") }}
+                                    {{ time(item.date, config.date_format + ' ' + config.time_format or "MMMM Do YYYY") }}
                                 </div>
-
                                 {% if min2read %}
                                     <div class="al_index_post_read_time">
                                         {{ min2read(item.content) }} Min Read
                                     </div>
                                 {% endif %}
-
                             </div>
                         </div>
                         <div class="al_index_post_excerpt_cnt">
@@ -50,19 +45,20 @@
                             </p>
                         </div>
                         <div class="al_index_post_button_cnt dis_flex">
-                            <a class="al_button al_button_theme al_index_post_button" href="{{ url_for(item.link || item.path) }}">
+                            <a class="al_button al_button_theme al_index_post_button" href="{{ url_for(item.path) }}">
                                 READ ON
                             </a>
-                            <a class="al_button al_button_transparent al_index_post_button" href="//getpocket.com/edit?url={{ config.url + '/' + item.path }}">
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                href="//getpocket.com/edit?url={{ config.url + '/' + item.path }}">
                                 READ LATER
                             </a>
                         </div>
                     </li>
                 {% endfor %}
             </ul>
-
             <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="{{ '/' + page.prev_link || '/' }}">
+                <a class="al_post_nav_item dis_flex_acenter" href="{{ '/' + page.prev_link or '/' }}">
                     {% if page.prev !== 0 %}
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
@@ -70,7 +66,7 @@
                         <span>Newer Posts</span>
                     {% endif %}
                 </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="{{ '/' + page.next_link || '/' }}">
+                <a class="al_post_nav_item dis_flex_acenter" href="{{ '/' + page.next_link or '/' }}">
                     {% if page.next !== 0 %}
                         <span>Older Posts</span>
                         <svg class="al_arrow">

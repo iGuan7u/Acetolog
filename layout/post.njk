@@ -1,4 +1,4 @@
-{% extends './includes/base.swig' %}
+{% extends './includes/base.njk' %}
 
 {% block extra_style %}
     {% if theme.gitalk.enable %}
@@ -52,8 +52,8 @@
                 </section>
 
                 {# Comment Plugins #}
-                {% include "./includes/plugins/gitalk.swig" %}
-                {% include "./includes/plugins/disqus.swig" %}
+                {% include "./includes/plugins/gitalk.njk" %}
+                {% include "./includes/plugins/disqus.njk" %}
             </article>
 
             {# Navigate Element #}
