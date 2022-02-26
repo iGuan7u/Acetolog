@@ -59,7 +59,7 @@ contact:
 ## Recommended
 umami_analytice:
   enable: true
-  website_id: cf92e6d8-fd85-4140-b65a-c4de8573222b
+  website_id: db0a2778-6317-499a-856b-8e7b4d4de5c7
   js_src: https://umami.iguan7u.cn/umami.js
 
 baidu_analytics:
