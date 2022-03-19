@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
     <head>
+        {% block extra_style %}{% endblock %}
         {% include "./head.njk" %}
-        {% block extra_style %}{% endblock  %}
     </head>
     <body>
         {% include "./headerbar.njk" %}
@@ -18,4 +17,3 @@
         {% include "./plugins/plugin.njk" %}
     </body>
 </html>
-        
